@@ -1,11 +1,49 @@
-# Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+# Owlracle: LLM-powered resource discovery
+*internal organization resources inside chat interface*
 
-## What is Nextra?
+<b>Owlracle</b> is an LLM-powered resource-discovery chatbot that transforms how Rice students find information.
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+Ask any question about Rice university, and Owlracle:
+1. 🔍 Retrieves relevant info from vector database
+2. 📝 Synthesizes the answer based on user question
+3. ⚡**Learns independently if unable to answer correctly at first**⚡
 
-## Documentation
+## Features
+* [Prompt Engineering](https://github.com/Open-Nice/Owlracle/blob/main/app/api/chat/route.ts): codifies how LLM reasons about users question given provided contexts from VectorDB.
+* [Modal](https://github.com/Open-Nice/Owlracle-DB-manager/blob/main/event_scrape.py): manages(create, update, delete) VectorDB information.
+* [Perplexity AI](https://github.com/Open-Nice/Owlracle-DB-manager/blob/main/perplexity%20teacher/teach.ipynb): does due diligence every night to teach vectorDB new information.
 
-The documentation is available at [https://nextra.site](https://nextra.site).
+## Contributing
+
+Contributions are greatly appreciated! Join our [Discord](https://discord.gg/aHRxTK5jHG) and [Nice organization](https://github.com/Open-Nice/Owlracle).
+
+## Motivation
+
+Rice is greatly resourceful. But the problem I faced ever since I was a Freshmen is that the resource is scattered all around. So I believe there is value in creating 1) an internal database which every Owl has read and edit access 2) a friendly chat interface to learn more about the resources.
+
+So we decided to leverage the capabilities of Large Language Model to address this.
+
+## Stack
+- GPT-3.5-turbo (We are working on migrating to Llama-v2. Join us [here](https://github.com/Open-Nice/Owlracle-llama2.c))
+- Supabase for Vector DB with OpenAIEmbedding as our embeddings model
+- Modal Labs for database management
+
+Consider starring us if you're using Owlracle so more people can improve it!
+
+## Contributors [Join us](https://github.com/Open-Nice/)
+
+<br/>
+  <a href="https://www.linkedin.com/in/ye-peter-cao-98870920b/" target='_blank' style={{ display: 'inline-block', borderRadius: '50%', overflow: 'hidden', width: '60px', height: '60px' }}>
+    <img src="https://media.licdn.com/dms/image/D5603AQE0dxUzj8J2Hg/profile-displayphoto-shrink_800_800/0/1681423041022?e=1697068800&v=beta&t=pexom3sglNu63wybcAfRnSdycFyJ3siZH6btaLGjRGs" alt="LinkedIn Profile" style={{ width: '100%', height: 'auto' }} />
+  </a>
+  <a href="https://www.linkedin.com/in/ningzhi-xu-0914/" target='_blank' style={{ display: 'inline-block', borderRadius: '50%', overflow: 'hidden', width: '60px', height: '60px' }}>
+    <img src="https://media.licdn.com/dms/image/C5603AQGQgfxS_zyvMA/profile-displayphoto-shrink_800_800/0/1603305251423?e=1697068800&v=beta&t=DDisHAv-MmwZ5l9rvXgc-9dCGpEJpI8qpwdJ6t9d4Vk" alt="LinkedIn Profile" style={{ width: '100%', height: 'auto' }} />
+  </a>
+  <a href="https://www.linkedin.com/in/alexia-yuening-huang/" target='_blank' style={{ display: 'inline-block', borderRadius: '50%', overflow: 'hidden', width: '60px', height: '60px' }}>
+    <img src="https://media.licdn.com/dms/image/C5603AQHhRO5uRsUL4g/profile-displayphoto-shrink_800_800/0/1653103255301?e=1697068800&v=beta&t=kYLqo2Rty8hgl8ZuzQy9yMrce7hgybK2C51XigaPYSw" alt="LinkedIn Profile" style={{ width: '100%', height: 'auto' }} />
+  </a>
+  <a href="https://www.linkedin.com/in/jinyu-pei-b92b80249/" target='_blank' style={{ display: 'inline-block', borderRadius: '50%', overflow: 'hidden', width: '60px', height: '60px' }}>
+    <img src="https://media.licdn.com/dms/image/D5603AQF7IJZIEGUa3Q/profile-displayphoto-shrink_800_800/0/1680674187789?e=1697068800&v=beta&t=5YW4amwcUKYsldfFb8T485n15nV019IYpBpist270Bs" alt="LinkedIn Profile" style={{ width: '100%', height: 'auto' }} />
+  </a>
+<br/>
+

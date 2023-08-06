@@ -1,15 +1,25 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "index": "Overview",
+  "examples": "Examples",
+  "limitations": "Limitations",
+  "roadmap": "Roadmap",
+  "privacy": "Privacy Policy", 
   "about": {
-    "title": "About",
-    "type": "page"
-  },
-  "contact": {
-    "title": "Contact ↗",
+    "title": "Product",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://www.owlracle.com/",
+    "newWindow": true
+  },
+  "email": {
+    "title": "Email",
+    "type": "page",
+    "href": "mailto:yc127@rice.edu",
+    "newWindow": true
+  },
+  "donate": {
+    "title": "💎 Donate",
+    "type": "page",
+    "href": "https://buy.stripe.com/9AQ2areKfgPl3sI000",
     "newWindow": true
   }
 }
