@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import styles from './counters.module.css'
+import { Analytics } from '@vercel/analytics/react'
 
 function MyButton() {
   const [count, setCount] = useState(0)
@@ -20,5 +21,10 @@ function MyButton() {
 }
 
 export default function MyApp() {
-  return <MyButton />
+  return (
+    <>
+      <MyButton />
+      <Analytics />
+    </>
+  )
 }
